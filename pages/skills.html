@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Embedded CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-buttons {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a.active {
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        .nav-buttons .btn {
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons .btn i {
+            font-size: 1.2em;
+        }
+
+        .nav-buttons .btn:hover {
+            background: #0056b3;
+        }
+
+        .nav-buttons .resume-btn {
+            padding: 10px 15px;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px; /* Add margin-top to move skills below the title */
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 20px;
+            margin: 10px;
+            width: 45%; /* Adjust the width for two columns */
+            border-radius: 5px;
+        }
+
+        .skill-icon {
+            margin-left: 20px;
+        }
+
+        .skill img {
+            max-width: 40px;
+            height: 40px; /* Ensure consistent image size */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../home.html"><h1>Vaibhav Jha</h1></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../pages/placement.html">Placements</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li><a href="https://www.linkedin.com/in/your-linkedin" class="btn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/your-github" class="btn" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.slideshare.net/slideshow/it-software-development-resume-vaibhav-jha-2024/268783994" class="btn resume-btn" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <span>HTML</span>
+                    <span class="skill-icon"><img src="../images/html.svg.png" alt="HTML Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <span class="skill-icon"><img src="../images/css.svg.png" alt="CSS Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <span class="skill-icon"><img src="../images/js.png" alt="JavaScript Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Ionic</span>
+                    <span class="skill-icon"><img src="../images/ionic-icon.webp" alt="JSX Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>SQL</span>
+                    <span class="skill-icon"><img src="../images/SQL.png.webp" alt="SQL Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>MySQL</span>
+                    <span class="skill-icon"><img src="../images/mysql.png" alt="MySQL Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>PowerShell 7</span>
+                    <span class="skill-icon"><img src="../images/powershell.svg" alt="PowerShell Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <span class="skill-icon"><img src="../images/Python_logo_51.svg.png" alt="Python Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>PHP</span>
+                    <span class="skill-icon"><img src="../images/PHP-logo.svg.png" alt="PHP Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>React.js</span>
+                    <span class="skill-icon"><img src="../images/React-icon.svg.png" alt="React.js Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Node.js</span>
+                    <span class="skill-icon"><img src="../images/node-js-icon-454x512-nztofx17.png" alt="Node.js Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Docker</span>
+                    <span class="skill-icon"><img src="../images/docker.png" alt="Docker Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Git</span>
+                    <span class="skill-icon"><img src="../images/Git_icon.svg.png" alt="Git Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Adobe Photoshop</span>
+                    <span class="skill-icon"><img src="../images/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Premiere Pro</span>
+                    <span class="skill-icon"><img src="../images/Adobe_Premiere_Pro_CC_icon.svg.png" alt="Premiere Pro Icon"></span>
+                </div>
+                <div class="skill">
+                    <span>Microsoft Visual Studio Code</span>
+                    <span class="skill-icon"><img src="../images/microsoft.png" alt="VS Code Icon"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vaibhav Jha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Highlight active link
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-links a');
+        const menuLength = menuItem.length;
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

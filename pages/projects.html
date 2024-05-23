@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Embedded CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-buttons {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a.active {
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        .nav-buttons .btn {
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons .btn i {
+            font-size: 1.2em;
+        }
+
+        .nav-buttons .btn:hover {
+            background: #0056b3;
+        }
+
+        .nav-buttons .resume-btn {
+            padding: 10px 15px;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 20px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .project-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .project-image img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .project a:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../home.html"><h1>Vaibhav Jha</h1></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="../pages/placement.html">Placements</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li><a href="https://www.linkedin.com/in/your-linkedin" class="btn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/your-github" class="btn" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.slideshare.net/slideshow/it-software-development-resume-vaibhav-jha-2024/268783994" class="btn resume-btn" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="container projects-container">
+            <div class="project">
+                <div class="project-text">
+                    <h3>FitnessVibes</h3>
+                    <p>Helps the user to track workouts and calories burnt.</p>
+                    <a href="https://github.com/VaibhavJha-github/FitnessVibes" target="_blank">View Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/200" alt="FitnessVibes Project">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-text">
+                    <h3>TicTacToe</h3>
+                    <p>A TicTacToe game that dynamically stores data using asyncStorage.</p>
+                    <a href="https://github.com/VaibhavJha-github/TicTacToe" target="_blank">View Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/200" alt="TicTacToe Project">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-text">
+                    <h3>Mobile App dev</h3>
+                    <p>An interactive app demonstrating user-centric design and functionality using JavaScript and React.js framework.</p>
+                    <a href="https://github.com/VaibhavJha-github/MADassignment" target="_blank">View Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/200" alt="MADassignment Project">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-text">
+                    <h3>Tower of Hanoi</h3>
+                    <p>A TypeScript project for managing Towers of Hanoi.</p>
+                    <a href="https://github.com/VaibhavJha-github/TOH" target="_blank">View Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/200" alt="TOH Project">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vaibhav Jha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Highlight active link
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-links a');
+        const menuLength = menuItem.length;
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Embedded CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-buttons {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a.active {
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        .nav-buttons .btn {
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons .btn i {
+            font-size: 1.2em;
+        }
+
+        .nav-buttons .btn:hover {
+            background: #0056b3;
+        }
+
+        .nav-buttons .resume-btn {
+            padding: 10px 15px;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #hero .container {
+            max-width: 600px;
+        }
+
+        #hero h2 {
+            font-size: 3em;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-bottom: 20px; /* Added margin-bottom to create space for the arrow */
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .scroll-down {
+            font-size: 2em;
+            color: #fff;
+            animation: bounce 2s infinite;
+            margin-top: 20px; /* Add some space between the button and the arrow */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 100px; /* More bottom padding */
+            margin-left: 30px;
+            max-width: 1400px; /* Smaller width for the container */
+        }
+
+        .about-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            right: -100%; /* Start off-screen to the right */
+            transition: right 1s ease-out; /* Smooth transition */
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: calc(70vh - 40px); /* Larger image */
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        .about-container.visible .about-image {
+            right: 0; /* Move to final position */
+        }
+
+        .about-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .about-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html"><h1>Vaibhav Jha</h1></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/projects.html">Projects</a></li>
+                    <li><a href="./pages/placement.html">Placements</a></li>
+                    <li><a href="./pages/skills.html">Skills</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li><a href="https://www.linkedin.com/in/your-linkedin" class="btn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/your-github" class="btn" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.slideshare.net/slideshow/it-software-development-resume-vaibhav-jha-2024/268783994" class="btn resume-btn" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Software Developer | Web Developer | Tech Enthusiast</p>
+            <a href="./pages/projects.html" class="btn">View My Work</a>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Passionate Software Engineer | Transforming Ideas into Innovative Solutions</p>
+            <p>I am a committed student at Griffith University pursuing a Bachelor of Information Technology: Software Development, with a GPA of 6.0. My technical expertise spans HTML, CSS, JavaScript, JSX, SQL, MySQL, PowerShell 7, Python, and PHP, among others.</p>
+            
+            <a href="./pages/about.html" class="about-btn">Learn More About Me</a>
+        </div>
+        <div class="about-image">
+            <img src="./images/potrait.png" alt="Your Image">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vaibhav Jha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Highlight active link
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-links a');
+        const menuLength = menuItem.length;
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].classList.add('active');
+            }
+        }
+
+        // Scroll animation for about image
+        const aboutSection = document.querySelector('#about');
+        const aboutImage = document.querySelector('.about-image');
+        const aboutContainer = document.querySelector('.about-container');
+
+        window.addEventListener('scroll', () => {
+            const sectionTop = aboutSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (sectionTop < screenPosition) {
+                aboutContainer.classList.add('visible');
+            }
+        });
+
+        // Scroll to about section when arrow is clicked
+        document.querySelector('.scroll-down').addEventListener('click', () => {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
